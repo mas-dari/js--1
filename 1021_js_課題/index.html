@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ここから記載していく -->
+    <p class="game">何をだす？</p>
+    
+    <!-- 何を出すのか選択肢の画像を表示させる -->
+    <table class="start">
+        <tr>
+            <td class="rock"><img src="/Users/ryoma.masuda/Desktop/G/1021_js_課題/img/rock.png" alt="グーの画像" data-id="rock"></td>
+            <td class="scissors"><img src="/Users/ryoma.masuda/Desktop/G/1021_js_課題/img/scissors.png" alt="チョキーの画像"data-id="scissors"></td>
+            <td class="paper"><img src="/Users/ryoma.masuda/Desktop/G/1021_js_課題/img/paper.png" alt="パーの画像"data-id="paper"></td>
+        </tr>
+    </table>
+
+    <!-- 自分とcpが何を出したのか -->
+    <table>
+        <tr>
+            <td>自分</td>
+            <td>cp</td>
+        </tr>
+        <tr>
+            <td>
+                <!--自分の出した手を表示させる  -->
+                <p class="player"><img src="img/war_shield_man.png" alt=""></p>
+            </td>
+            <td>
+                <!-- cpの出した手を表示させる -->
+                <p class="cp"><img src="img/war_shield_woman.png" alt=""></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>結果</p>
+                <p class="result"><img src="img/images.jpeg" alt="勝敗"></p>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <!-- jQueryのjsのコードを先に読み込む -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jsを紐づける -->
+    <script src="js/script.js"></script>
+</body>
+</html>
