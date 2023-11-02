@@ -3,6 +3,10 @@
 // じゃんけんアプリ
 // クリックすると開始
 
+// 勝敗の数をカウント
+let winnm =0
+let rosenm =0
+
 // グーを押した時
 // cpの出した手を表示
 $(".rock").on("click", function () {
@@ -28,9 +32,13 @@ $(".rock").on("click", function () {
     }else if(cpchoice === 1){
         console.log("1");
         $(".result").html('<img src="img/pose_win_boy.png" alt="勝ちの画像">');
+        winnm++;
+        console.log(winnm,"勝った回数");
     }else if(cpchoice === 2){
         console.log("2");
         $(".result").html('<img src="img/pose_lose_boy.png" alt="負けの画像">');
+        rosenm++;
+        console.log(rosenm,"負けた回数");
     }    
 });
 
@@ -56,12 +64,16 @@ $(".scissors").on("click", function () {
     if (cpchoice === 0) {
         console.log("0"); 
         $(".result").html('<img src="img/pose_lose_boy.png" alt="負けの画像">');
+        rosenm++;
+        console.log(rosenm,"負けた回数");
     }else if(cpchoice === 1){
         console.log("1");
         $(".result").html('<img src="img/movie_couple.png" alt="あいこの画像">');
     }else if(cpchoice === 2){
         console.log("2");
         $(".result").html('<img src="img/pose_win_boy.png" alt="勝ちの画像">');
+        winnm++;
+        console.log(winnm,"勝った回数");
     }    
 });
 
@@ -89,9 +101,13 @@ $(".paper").on("click", function () {
     if (cpchoice === 0) {
         console.log("0"); 
         $(".result").html('<img src="img/pose_win_boy.png" alt="勝ちの画像">');
+        winnm++;
+        console.log(winnm,"勝った回数");
     }else if(cpchoice === 1){
         console.log("1");
         $(".result").html('<img src="img/pose_lose_boy.png" alt="負けの画像">');
+        rosenm++;
+        console.log(rosenm,"負けた回数");
     }else if(cpchoice === 2){
         console.log("2");
         $(".result").html('<img src="img/movie_couple.png" alt="あいこの画像">');
@@ -114,3 +130,18 @@ $(".paper").on("click", function () {
 });
 
 
+// 勝敗のカウント
+$(".start").on("click", function () {
+
+    if (winnm === 1) {
+        console.log("1"); 
+        $(".wincount").html('1勝');
+    }else if(winnm === 2){
+        console.log("2");
+        $(".wincount").html('2勝');
+    }else if(winnm === 3){
+        console.log("3");
+        alert("あなたの勝ちです！")
+    }    
+  
+});
