@@ -135,13 +135,29 @@ $(".start").on("click", function () {
 
     if (winnm === 1) {
         console.log("1"); 
-        $(".wincount").html('1勝');
+        $(".cplife").html('<img src="img/24201029.jpg">');
     }else if(winnm === 2){
         console.log("2");
-        $(".wincount").html('2勝');
+        $(".cplife").html('<img src="img/24201069.jpg">');
     }else if(winnm === 3){
         console.log("3");
-        alert("あなたの勝ちです！")
+        $(".cplife").html('<img src="img/24201076.jpg">');
+        setTimeout('alert("あなたの勝ちです。")', 1000);
+        setTimeout('location.reload()', 1000);
     }    
+
+    if (rosenm === 1) {
+        console.log("1"); 
+        $(".playerlife").html('<img src="img/24201029.jpg">');
+    }else if(rosenm === 2){
+        console.log("2");
+        $(".playerlife").html('<img src="img/24201069.jpg">');
+    }else if(rosenm === 3){
+        console.log("3");
+        $(".playerlife").html('<img src="img/24201076.jpg">');
+        setTimeout('alert("あなたの負けです。")', 100);
+        setTimeout('location.reload()', 100);
+    }  
+
   
 });
