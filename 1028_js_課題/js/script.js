@@ -12,13 +12,13 @@ $(".rock").on("click", function () {
     
     if (cpchoice === 0) {
         console.log("0"); 
-        $(".cp").html('<img src="/Users/ryoma.masuda/Desktop/G/1021_js_課題/img/rock.png" alt="グーの画像">');
+        $(".cp").html('<img src="img/rock.png"" alt="グーの画像">');
     }else if(cpchoice === 1){
         console.log("1");
-        $(".cp").html('<img src="/Users/ryoma.masuda/Desktop/G/1021_js_課題/img/scissors.png" alt="チョキの画像">');
+        $(".cp").html('<img src="img/scissors.png" alt="チョキの画像">');
     }else if(cpchoice === 2){
         console.log("2");
-        $(".cp").html('<img src="/Users/ryoma.masuda/Desktop/G/1021_js_課題/img/paper.png" alt="パーの画像">');
+        $(".cp").html('<img src="img/paper.png" alt="パーの画像">');
     }    
   
 // グーを出した時の勝敗を表示
